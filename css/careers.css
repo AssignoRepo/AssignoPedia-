@@ -201,19 +201,30 @@
             
             .mobile-menu-btn {
                 display: block;
+                font-size: 1.6rem;
+                padding: 8px;
+                margin-right: 0;
             }
             
-            .cta-btn {
+            .cta-btn:not(.mobile-cta .cta-btn) {
                 display: none;
             }
 
             .logo-text {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+            }
+
+            .logo-subtext {
+                font-size: 0.8rem;
             }
 
             .logo-svg {
-                width: 60px;
-                height: 40px;
+                width: 45px;
+                height: 30px;
+            }
+
+            .logo-container {
+                gap: 8px;
             }
 
             header {
@@ -221,7 +232,27 @@
             }
 
             nav {
-                padding: 0.8rem 0;
+                padding: 0.8rem 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 1.1rem;
+            }
+
+            .logo-subtext {
+                font-size: 0.7rem;
+            }
+
+            .logo-svg {
+                width: 40px;
+                height: 26px;
+            }
+
+            .mobile-menu-btn {
+                font-size: 1.4rem;
+                padding: 6px;
             }
         }
 
@@ -530,6 +561,22 @@
 
             .details-container {
                 padding: 2rem;
+            }
+            .logo-text {
+                font-size: 1.4rem;
+            }
+        
+            .logo-subtext {
+                font-size: 1rem;
+                margin-right: 0;
+            }
+        
+            .logo-container {
+                margin-right: auto;
+            }
+        
+            .mobile-menu-btn {
+                margin-left: 10px;
             }
         }
 

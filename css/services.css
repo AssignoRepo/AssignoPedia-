@@ -517,19 +517,30 @@
             
             .mobile-menu-btn {
                 display: block;
+                font-size: 1.3rem;
+                padding: 8px;
+                margin-right: 0;
             }
             
-            .cta-btn {
+            .cta-btn:not(.mobile-cta .cta-btn) {
                 display: none;
             }
 
             .logo-text {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
+            }
+
+            .logo-subtext {
+                font-size: 0.8rem;
             }
 
             .logo-svg {
-                width: 60px;
-                height: 40px;
+                width: 45px;
+                height: 30px;
+            }
+
+            .logo-container {
+                gap: 8px;
             }
 
             header {
@@ -537,7 +548,7 @@
             }
 
             nav {
-                padding: 0.8rem 0;
+                padding: 0.8rem 15px;
             }
 
             .benefits-grid {
@@ -550,7 +561,7 @@
             }
 
             .category-title {
-                font-size: 2.2rem;
+                font-size: 1.8rem;
             }
 
             .service-grid {
@@ -558,13 +569,62 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .services-title {
-                font-size: 2.3rem;
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 1.1rem;
             }
 
+            .logo-subtext {
+                font-size: 0.7rem;
+            }
+
+            .logo-svg {
+                width: 40px;
+                height: 26px;
+            }
+
+            .mobile-menu-btn {
+                font-size: 1rem;
+                padding: 6px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-title {
+             
+                font-size: 2.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease forwards;
+            }
+            .logo-text {
+                font-size: 1.4rem;
+            }
+        
+            .logo-subtext {
+                font-size: 1rem;
+                margin-right: 0;
+            }
+        
+            .logo-container {
+                margin-right: auto;
+            }
+        
+            .mobile-menu-btn {
+                margin-left: 10px;
+            }
             .services-subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
+            
+                max-width: 800px;
+                margin: 0 auto 3rem;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+                opacity: 0;
+                transform: translateY(30px);
+                animation: fadeInUp 1s ease 0.3s forwards;
             }
 
             .service-card {
@@ -648,22 +708,4 @@
         }
 
         /* Enhance text visibility */
-        .services-title {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease forwards;
-        }
-
-        .services-subtitle {
-            font-size: 1.4rem;
-            max-width: 800px;
-            margin: 0 auto 3rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease 0.3s forwards;
-        }
+       

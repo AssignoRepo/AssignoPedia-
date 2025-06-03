@@ -14,7 +14,12 @@
         <nav class="container">
             <div class="logo-container">
                 <img src="logo.png" alt="Assignopedia Logo" class="logo-svg">
-                <span class="logo-text">Assignopedia</span>
+                <div class="logo-text-container">
+                    <a href="index.html" class="logo-link">
+                        <span class="logo-text">Assignopedia</span>
+                    </a>
+                    <span class="logo-subtext">Services</span>
+                </div>
             </div>
             
             <ul class="nav-links">
@@ -469,6 +474,49 @@
         
         .fa-linkedin:hover {
             color: #0077B5;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            line-height: 1.2;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .logo-link:hover {
+            text-decoration: none;
+        }
+
+        .logo-text, .logo-subtext {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: none;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .logo-text {
+            margin-bottom: 0;
+        }
+
+        .logo-subtext {
+            margin-top: 0;
+            margin-right: -20px;
         }
     </style>
 

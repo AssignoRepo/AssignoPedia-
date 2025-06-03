@@ -128,7 +128,7 @@
             position: relative;
         }
         
-        .logo-text::after {
+       /* .logo-text::after {
             content: '';
             position: absolute;
             bottom: -5px;
@@ -141,6 +141,10 @@
         
         .logo-container:hover .logo-text::after {
             width: 100%;
+        }
+        */
+        .logo-text::after {
+            content: none !important;
         }
         
         .nav-links {
@@ -1121,10 +1125,38 @@
             
             .mobile-menu-btn {
                 display: block;
+                font-size: 1.3rem;
+                padding: 8px;
+                margin-right: 0;
             }
             
+            .cta-btn:not(.mobile-cta .cta-btn) {
+                display: none;
+            }
+
+            .logo-text {
+                font-size: 1.3rem;
+            }
+
+            .logo-subtext {
+                font-size: 0.8rem;
+            }
+
+            .logo-svg {
+                width: 45px;
+                height: 30px;
+            }
+
+            .logo-container {
+                gap: 8px;
+            }
+
+            header {
+                background: var(--white);
+            }
+
             nav {
-                position: relative;
+                padding: 0.8rem 15px;
             }
         }
         
@@ -1134,9 +1166,12 @@
             }
             
             .logo-text {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
-            
+            .logo-subtext {
+                font-size: 1rem;
+                margin-right: 0;
+            }
             .logo-svg {
                 width: 50px;
                 height: 38px;
@@ -1243,24 +1278,46 @@
                 font-size: 1.3rem;
                 margin-bottom: 1.5rem;
             }
+            .logo-container {
+                margin-right: auto;
+            }
+        
+            .mobile-menu-btn {
+                margin-left: 10px;
+            }
+            .service-list li {
+                padding-left: 1.8rem;
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+        
+            .service-list li::before {
+                left: 0.2rem;
+            }
         }
+        
         
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
             }
             
-            .logo-container {
-                gap: 10px;
+            .logo-text {
+                font-size: 1.1rem;
             }
             
-            .logo-text {
-                font-size: 1.6rem;
+            .logo-subtext {
+                font-size: 0.7rem;
             }
             
             .logo-svg {
-                width: 45px;
-                height: 34px;
+                width: 40px;
+                height: 26px;
+            }
+            
+            .mobile-menu-btn {
+                font-size: 1rem;
+                padding: 6px;
             }
             
             .cta-btn {
@@ -1316,8 +1373,8 @@
             }
             
             .service-list li {
-                font-size: 0.95rem;
-                padding: 0.6rem 0;
+                font-size: 0.8rem;
+               
             }
             
             .feature {
